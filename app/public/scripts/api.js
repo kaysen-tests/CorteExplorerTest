@@ -1,9 +1,9 @@
-url = `http://localhost:3100/cortes`
+url = `http://localhost:10000/cortes`
 
 function get_corte_by_RCC(rcc){
     console.log("print desde funcion:", rcc)
 
-    fetch(`http://localhost:3100/cortes/rcc/${rcc}`)
+    fetch(`http://localhost:10000/cortes/rcc/${rcc}`)
     .then(res => res.json())
     .then(data => {
         var item = createAccordionItem(data);
@@ -18,7 +18,7 @@ function get_corte_by_RCC(rcc){
 function get_cortes_between_RCCs(rcc1, rcc2){
     console.log("print desde funcion:", rcc1, rcc2)
 
-    fetch(`http://localhost:3100/cortes/rcc?rcc1=${rcc1}&rcc2=${rcc2}`)
+    fetch(`http://localhost:10000/cortes/rcc?rcc1=${rcc1}&rcc2=${rcc2}`)
     .then(res => res.json())
     .then(data => {
         console.log('Datos recibidos:', data);
@@ -42,7 +42,7 @@ function get_cortes_between_RCCs(rcc1, rcc2){
 function get_corte_by_date(date){
     console.log("print desde funcion:", date)
 
-    fetch(`http://localhost:3100/cortes/date/${date}`)
+    fetch(`http://localhost:10000/cortes/date/${date}`)
     .then(res => res.json())
     .then(data => {
         console.log('Datos recibidos:', data);
@@ -68,7 +68,7 @@ function get_corte_by_date(date){
 function get_cortes_between_dates(date1, date2){
     console.log("print desde funcion:", date1, date2)
 
-    fetch(`http://localhost:3100/cortes/date?date1=${date1}&date2=${date2}`)
+    fetch(`http://localhost:10000/cortes/date?date1=${date1}&date2=${date2}`)
     .then(res => res.json())
     .then(data => {
         console.log('Datos recibidos:', data);
