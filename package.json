@@ -1,0 +1,19 @@
+{
+  "name": "CorteExplorer",
+  "version": "1.0.0",
+  "description": "Hello World!",
+  "main": "server.js",
+  "scripts": {
+    "start": "electron .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Kaysen Gamiz",
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "moment-timezone": "^0.5.43",
+    "mongoose": "^7.4.3",
+    "path": "^0.12.7"
+  }
+}

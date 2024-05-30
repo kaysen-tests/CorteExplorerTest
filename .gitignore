@@ -138,5 +138,3 @@ accordeon_item_structure.txt
 /CorteExplorerMSI-win32-x64/
 compile.py
 build_installer.js
-package.json
-package-lock.json
