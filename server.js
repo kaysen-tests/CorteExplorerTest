@@ -8,7 +8,7 @@ const config = require(path.join(__dirname, 'app', 'config', 'config.js'));
 // Mongo DB
 
 async function connect(){
-  const mongoConection = `mongodb+srv://admin:${config.password}@cortes.9iadh5h.mongodb.net/CortesDB`;
+  const mongoConection = `mongodb+srv://${process.env.db_username}:${process.env.db_password}@${process.env.db_string}`;
   let db = mongoose.connection;
   db.on('connecting', () => {
       console.log('Connecting...');

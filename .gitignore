@@ -131,8 +131,6 @@ dist
 
 # config
 
-/app/config/
-
 accordeon_item_structure.txt
 /windows_installer/
 /CorteExplorerMSI-win32-x64/
