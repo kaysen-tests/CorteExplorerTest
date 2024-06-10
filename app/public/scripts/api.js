@@ -5,6 +5,8 @@ function get_corte_by_RCC(rcc){
     .then(res => res.json())
     .then(data => {
         var item = createAccordionItem(data);
+        console.log('Hola')
+        console.log(data)
         insertAccordionItemIntoContainer(item);
     })
     .catch(error => {
