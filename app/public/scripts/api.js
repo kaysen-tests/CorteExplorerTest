@@ -1,9 +1,7 @@
-url = `http://localhost:10000/cortes`
-
 function get_corte_by_RCC(rcc){
     console.log("print desde funcion:", rcc)
 
-    fetch(`http://localhost:10000/cortes/rcc/${rcc}`)
+    fetch(`/cortes/rcc/${rcc}`)
     .then(res => res.json())
     .then(data => {
         var item = createAccordionItem(data);
